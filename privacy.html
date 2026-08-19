@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – Maths Tutor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --surface: #121b2e;
+      --blue: #4f8ff0;
+      --blue-light: #8ab4f8;
+      --text: #e7ecf5;
+      --muted: #93a0b8;
+      --border: #223050;
+      --accent: #f0b94f;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(#ffffff05 1px, transparent 1px),
+        linear-gradient(90deg, #ffffff05 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 32px 100px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 64px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sym {
+      font-size: 44px;
+      display: block;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 0 12px #4f8ff055);
+      animation: glow 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { filter: drop-shadow(0 0 8px #4f8ff044); }
+      to   { filter: drop-shadow(0 0 20px #4f8ff099); }
+    }
+
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--blue-light);
+      letter-spacing: 0.03em;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .effective {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 6px 18px;
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      font-size: 0.8rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+    }
+
+    section {
+      margin-bottom: 48px;
+      padding: 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--blue);
+      border-radius: 2px;
+      opacity: 0;
+      transform: translateY(16px);
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    section:nth-child(1)  { animation-delay: 0.1s; }
+    section:nth-child(2)  { animation-delay: 0.2s; }
+    section:nth-child(3)  { animation-delay: 0.3s; }
+    section:nth-child(4)  { animation-delay: 0.4s; }
+    section:nth-child(5)  { animation-delay: 0.5s; }
+    section:nth-child(6)  { animation-delay: 0.6s; }
+    section:nth-child(7)  { animation-delay: 0.7s; }
+    section:nth-child(8)  { animation-delay: 0.8s; }
+    section:nth-child(9)  { animation-delay: 0.9s; }
+    section:nth-child(10) { animation-delay: 1.0s; }
+    section:nth-child(11) { animation-delay: 1.1s; }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.25rem;
+      color: var(--blue-light);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon { font-size: 1rem; opacity: 0.85; }
+
+    p { margin-bottom: 12px; color: var(--text); font-size: 0.97rem; }
+    p:last-child { margin-bottom: 0; }
+
+    ul { list-style: none; margin: 8px 0 12px 0; }
+
+    ul li {
+      padding: 4px 0 4px 20px;
+      position: relative;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    ul li::before {
+      content: '∑';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 0.8rem;
+      top: 6px;
+    }
+
+    a { color: var(--blue-light); text-decoration: none; border-bottom: 1px solid #4f8ff044; transition: border-color 0.2s; }
+    a:hover { border-color: var(--blue-light); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 0.9rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    th { color: var(--muted); font-weight: 400; letter-spacing: 0.04em; text-transform: uppercase; font-size: 0.78rem; }
+
+    .highlight {
+      background: #4f8ff00d;
+      border: 1px solid #4f8ff022;
+      border-radius: 2px;
+      padding: 12px 16px;
+      margin-top: 12px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding-top: 40px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+    }
+
+    footer .pkg {
+      display: inline-block;
+      margin-top: 8px;
+      font-family: monospace;
+      color: var(--accent);
+      font-size: 0.78rem;
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header>
+    <span class="sym">∫</span>
+    <h1>Privacy Policy</h1>
+    <div class="subtitle">Maths Tutor — Mobile Application</div>
+    <div class="effective">Effective Date: August 19, 2026</div>
+  </header>
+
+  <section>
+    <h2><span class="icon">§1</span> Introduction</h2>
+    <p>Welcome to <strong>Maths Tutor</strong> ("we", "our", or "us"). This Privacy Policy explains how we collect, use, and protect information when you use the Maths Tutor mobile application (<code>com.prithi.maths_tutor</code>), available on Google Play.</p>
+    <p>By using the app, you agree to the practices described in this policy. Please read it carefully.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">§2</span> Information We Collect</h2>
+    <p>Maths Tutor is built for learners of school age, so we collect only what's needed to run practice exams, track progress, and keep the leaderboard fair:</p>
+    <ul>
+      <li><strong>Learning progress:</strong> XP, levels, badges, streaks, chapter/topic completion, and quiz scores, stored on your device via local app preferences.</li>
+      <li><strong>Leaderboard data:</strong> A display name/nickname and score you choose to submit, stored in our Firebase Firestore database, so it can be shown on the global leaderboard.</li>
+      <li><strong>Handwriting scans:</strong> If you use the handwriting-recognition scratchpad feature, images of your handwritten work are processed on-device using Google ML Kit to recognize digits and symbols. These images are not uploaded to our servers.</li>
+      <li><strong>Device and diagnostic information:</strong> Basic device identifiers, crash logs, and app performance data, used to fix bugs and keep the app stable.</li>
+      <li><strong>Advertising identifiers:</strong> If you use the free version of the app, Google AdMob may collect advertising identifiers and usage data to serve and measure ads. See the "Advertising" section below.</li>
+      <li><strong>Purchase status:</strong> If you upgrade to Pro, your entitlement (paid/free) status is stored locally on your device and, where applicable, verified through the Google Play billing system.</li>
+    </ul>
+    <p>We do <strong>not</strong> collect your name, email address, phone number, or school details unless you voluntarily provide a nickname for the leaderboard.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">§3</span> How We Use Information</h2>
+    <p>Any information collected is used solely to:</p>
+    <ul>
+      <li>Track your practice progress, XP, badges, and streaks within the app</li>
+      <li>Operate the optional global leaderboard</li>
+      <li>Recognize handwritten answers in the scratchpad feature (processed on-device)</li>
+      <li>Fix bugs and improve app stability and performance</li>
+      <li>Serve and measure advertising for free-tier users</li>
+      <li>Deliver features you've unlocked through a Pro purchase</li>
+      <li>Comply with legal obligations</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">§4</span> Data Storage & Security</h2>
+    <p>Most app data — including exam progress, XP, badges, and Pro entitlement status — is stored <strong>locally on your device</strong> using standard Android app-preferences storage.</p>
+    <p>Leaderboard nicknames and scores are stored in <strong>Google Firebase Firestore</strong>, a cloud database service, so that scores can be compared across users. We implement standard security measures to protect this data, though no method of electronic storage is 100% secure.</p>
+    <div class="highlight">Your exam answers, handwriting images, and detailed practice history never leave your device. Only the leaderboard nickname and score you choose to submit are sent to our servers.</div>
+  </section>
+
+  <section>
+    <h2><span class="icon">§5</span> Advertising</h2>
+    <p>The free version of Maths Tutor displays ads and rewarded-video ads (to unlock hints) using <strong>Google AdMob</strong>. AdMob may collect advertising identifiers and usage data to show relevant ads and measure their performance, in accordance with <a href="https://policies.google.com/technologies/ads" target="_blank">Google's advertising policies</a>.</p>
+    <p>Purchasing the Pro upgrade removes ads from the app.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">§6</span> Third-Party Services</h2>
+    <p>The app uses the following third-party services, each governed by their own privacy policies:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank">Google Play Services</a> – app distribution, updates, and billing</li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase (Firestore & Crashlytics)</a> – leaderboard storage and crash reporting</li>
+      <li><a href="https://developers.google.com/ml-kit" target="_blank">Google ML Kit</a> – on-device handwriting recognition</li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank">Google AdMob</a> – advertising (free tier only)</li>
+    </ul>
+    <p>We do not sell or trade your data to third parties for marketing purposes.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">§7</span> Children's Privacy</h2>
+    <p>Maths Tutor is designed for students, including children, and is built to comply with applicable children's privacy laws. We do not knowingly collect personal information such as names, emails, or phone numbers from any user, including children under 13.</p>
+    <p>The optional leaderboard nickname should not contain a child's real name. Parents and guardians can disable ads and the leaderboard by upgrading to Pro, or by supervising the nickname chosen at first use.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">§8</span> Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Clear all locally stored app data via your device's app settings</li>
+      <li>Uninstall the app at any time to remove all locally stored data</li>
+      <li>Request removal of a submitted leaderboard entry by contacting us</li>
+      <li>Contact us with any privacy concerns or questions</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">§9</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. We encourage you to review this policy periodically.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">§10</span> Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:prithitechnologies@gmail.com">prithitechnologies@gmail.com</a></p>
+    <div class="highlight">We aim to respond to all privacy-related inquiries within 7 business days.</div>
+  </section>
+
+  <footer>
+    <p>© 2026 Maths Tutor. All rights reserved.</p>
+    <span class="pkg">com.prithi.maths_tutor</span>
+  </footer>
+
+</div>
+</body>
+</html>
